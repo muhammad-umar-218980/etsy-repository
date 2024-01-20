@@ -12,6 +12,7 @@ body{
  font-family: "Graphik Webfont", "-apple-system", "Helvetica Neue", "Droid Sans", "Arial", "sans-serif";
 }
 nav{
+  margin-left: 0px;
   border-bottom: 2px solid rgba(128, 128, 128, 0.503);
 
   /* CHANGES.. */
@@ -255,6 +256,56 @@ border-radius: 30px;
  }
 
 
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  nav .input_bar {
+    width: 100%;
+    margin: 0px 0;
+  }
+
+  nav .input_bar input {
+    width: 100%;
+  }
+
+  .article2 ul {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .article2 ul li {
+    width: 100%;
+  }
+
+
+  .sign_in,
+  .icons {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* NAVBAR CLOSED */
 
 
@@ -367,15 +418,19 @@ border-radius: 30px;
 }
 
 .square_cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   font-family: 'Nunito Sans', sans-serif;
-  margin-left: 7px;
+  margin: 3px auto;
   
 }
 
 
 
 .square_cards section div{
-  height: 320px;
+  /* height: 320px; */
+  height: 250px;
   transition: all 0.2s ease-in-out;
   border-radius: 15px;
 
@@ -408,7 +463,7 @@ padding-bottom: 7px;
 .square_cards section img{
   display: block;
   width: 175px;
-  height: 260px;
+  height: 200px;
   border-radius: 15px;
   padding: 10px;
 
@@ -425,13 +480,13 @@ padding-bottom: 7px;
 .square_cards .section_1{
   display: flex;
   
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 15px;
 }
 .square_cards .section_2{
   display: flex;
   
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 15px;
 }
 
@@ -592,6 +647,71 @@ cursor: pointer;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .paragraphs {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .paragraphs section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .paragraphs section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .paragraphs section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .paragraphs section {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------------------------------------------------- */
 
 
@@ -631,7 +751,7 @@ cursor: pointer;
 .subscription form{
   display: flex;
   
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 480px;
   max-height: 48px;
@@ -640,6 +760,7 @@ cursor: pointer;
   border-radius: 30px;
   background-color: white;
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .subscription form:hover{
@@ -651,14 +772,15 @@ cursor: pointer;
   border: none;
   outline: none;
   display: flex;
-  
+  margin-left: 15px ;
+  margin-right: 15px ;
     justify-content: center;
     align-items: center;
-    width: 330px;
-    max-height: 44px;
+    width: 300px;
+    /* height: 44px; */
     caret-shape: block;
-}
-
+  }
+  
 .subscription form input::placeholder{
   padding-left: 2px;
   font-size: 16px;
@@ -666,18 +788,109 @@ cursor: pointer;
   height: 40px;
 }
 .subscription form .subscribe_btn{
-  display: inline;
+  /* display: inline; */
   cursor: pointer;
     transition: all 0.1s ease-in-out;
     background-color: white;
+    border: transparent;
 }
 .subscription form .subscribe_btn:hover{
-border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+
   transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .subscription form {
+    margin: 0 auto 40px;
+    width: 100%;
+    min-height: 100% ;
+  }
+
+.subscription form input::placeholder{
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .subscription form {
+    margin: 0 auto 40px;
+  }
+}
+
+@media screen and (max-width: 532px){
+  .subscription form input{
+    width: 100%;
+  }
+  .subscription form .subscribe_btn{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  .subscription form {
+    margin: 0 auto 40px;
+  }
+
+    .subscription form input{
+      /* width: 100%; */
+      margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -869,7 +1082,7 @@ footer{
   align-items: center;
   justify-content: space-between;
   font-family: 'Nunito Sans', sans-serif;
-  height: 73.02px;
+  min-height: 73.02px;
   width: 100%;
   background-color: #222222;
   color: white;
@@ -992,7 +1205,12 @@ footer .last_el ul li:hover{
 
 
 
-
+@media only screen and (max-width:1000px) {
+  
+.square_cards,.square_cards .section_1, .square_cards .section_2{
+    flex-wrap: wrap;
+  }
+}
 
 
 
@@ -1005,7 +1223,7 @@ footer .last_el ul li:hover{
 @media only screen and (max-width: 768px) {
   body {
     font-size: 14px;
-    margin: 50px;
+    /* margin: 50px; */
     width: 100%;
   }
 
@@ -1015,7 +1233,7 @@ footer .last_el ul li:hover{
   
     .circle_cards , .subscription,
     .subscription form , .square_cards , .square_cards .section_1,
-    .square_cards .section_2 , .gifts  , .download_btn , .links{
+    .square_cards .section_2 , .gifts  , .download_btn , .links , footer{
       flex-wrap: wrap;
     }
     
@@ -1033,6 +1251,20 @@ footer .last_el ul li:hover{
           width: 230px;
             height: 17px;
         }
+
+    .download .download_btn{
+      width: 100%;
+    }    
+
+    footer{
+      flex-direction: column;
+    }
+
+    .last_el ul{
+      flex-wrap: wrap;
+    }
+
+      }
   
 
 @media only screen and (max-width: 480px) {
@@ -1055,8 +1287,6 @@ footer .last_el ul li:hover{
     }
   
     .circle_cards,
-    .subscription,
-    .subscription form,
     .square_cards,
     .square_cards .section_1,
     .square_cards .section_2,
@@ -1071,12 +1301,4 @@ footer .last_el ul li:hover{
     }
   
   
-    .subscription form input {
-      width: 230px;
-      height: 17px;
-    }
-  
-    .subscription form .subscribe_btn {
-      width: 230px;
-      height: 17px;
-    }
+  }
