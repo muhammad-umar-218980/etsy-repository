@@ -338,6 +338,12 @@ border-radius: 30px;
 
 }
 
+@media screen and (max-width: 1000px) {
+  .circle_cards{
+    flex-wrap: wrap;
+  }
+}
+
 .circle_cards section{
  display: flex;
  
@@ -424,6 +430,10 @@ border-radius: 30px;
   font-family: 'Nunito Sans', sans-serif;
   margin: 3px auto;
   
+}
+
+.square_cards section{
+  margin-top: 10px;
 }
 
 
@@ -666,12 +676,13 @@ cursor: pointer;
   .paragraphs {
     flex-direction: column;
   }
-}
-
-@media only screen and (max-width: 1000px) {
   .paragraphs section {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -772,7 +783,7 @@ cursor: pointer;
   border: none;
   outline: none;
   display: flex;
-  margin-left: 15px ;
+  margin-left: 20px ;
   margin-right: 15px ;
     justify-content: center;
     align-items: center;
@@ -1080,7 +1091,7 @@ footer{
   display: flex;
   
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: 'Nunito Sans', sans-serif;
   min-height: 73.02px;
   width: 100%;
@@ -1089,10 +1100,10 @@ footer{
 }
 
 footer .languages{
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-weight: bold;
   padding: 15px 20px;
-  transition: all 0.6s ease;
+  transition: all 0.1s ease;
   cursor: pointer;
   border-radius: 30px;
 }
@@ -1103,7 +1114,7 @@ footer .languages:hover{
 }
 
 footer .last_el{
-  margin-right: 60px;
+  /* margin-right: 60px; */
 }
 
 footer .last_el ul{
@@ -1262,15 +1273,14 @@ footer .last_el ul li:hover{
 
     .last_el ul{
       flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
     }
 
       }
   
 
 @media only screen and (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
 
   nav .input_bar {
     width: 100%;
@@ -1278,7 +1288,7 @@ footer .last_el ul li:hover{
 
     body {
       font-size: 14px;
-      margin: 50px;
+      /* margin: 50px; */
       width: 100%;
     }
   
