@@ -89,7 +89,7 @@ nav .input_bar input {
  border-bottom: transparent;
  outline: none;
  caret-color: #F1641E;
- caret-shape: underscore;
+ caret-shape: auto;
 }
 
 
@@ -681,9 +681,9 @@ cursor: pointer;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
  
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .paragraphs section {
@@ -772,11 +772,16 @@ cursor: pointer;
   background-color: white;
   transition: all 0.3s ease-in-out;
   z-index: 10;
+  overflow: hidden;
 }
 
 .subscription form:hover{
   border-color: black;
   box-shadow: 0px 0px 10px rgba(48, 48, 48, 0.231) ;
+}
+.subscription form:hover .subscribe_btn{
+  transform: scale(1.05);
+  background-color: rgba(128, 128, 128, 0.503);
 }
 
 .subscription form input{
@@ -800,14 +805,21 @@ cursor: pointer;
 }
 .subscription form .subscribe_btn{
   /* display: inline; */
-  cursor: pointer;
+  /* cursor: pointer;
     transition: all 0.1s ease-in-out;
     background-color: white;
-    border: transparent;
-}
-.subscription form .subscribe_btn:hover{
+    border: transparent; */
 
-  transform: scale(1.1);
+
+
+
+    border: transparent;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      padding: 10px ;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
 }
 
 
@@ -832,18 +844,18 @@ cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-  .subscription form {
+  /* .subscription form {
     margin: 0 auto 40px;
-  }
+  } */
 }
 
 @media screen and (max-width: 532px){
   .subscription form input{
     width: 100%;
   }
-  .subscription form .subscribe_btn{
+  /* .subscription form .subscribe_btn{
     display: none;
-  }
+  } */
 }
 
 
@@ -1113,9 +1125,9 @@ footer .languages:hover{
   background-color: rgba(172, 172, 172, 0.36);
 }
 
-footer .last_el{
-  /* margin-right: 60px; */
-}
+/* footer .last_el{
+  margin-right: 60px;
+} */
 
 footer .last_el ul{
   display: flex;
@@ -1242,8 +1254,7 @@ footer .last_el ul li:hover{
     width: 100%;
   }
   
-    .circle_cards , .subscription,
-    .subscription form , .square_cards , .square_cards .section_1,
+    .circle_cards , .square_cards , .square_cards .section_1,
     .square_cards .section_2 , .gifts  , .download_btn , .links , footer{
       flex-wrap: wrap;
     }
@@ -1253,7 +1264,7 @@ footer .last_el ul li:hover{
         }
 
 
-    .subscription form input{
+    /* .subscription form input{
       width: 230px;
       height: 17px;
     }
@@ -1261,7 +1272,7 @@ footer .last_el ul li:hover{
         .subscription form .subscribe_btn{
           width: 230px;
             height: 17px;
-        }
+        } */
 
     .download .download_btn{
       width: 100%;
